@@ -1,0 +1,39 @@
+/* ///////////////////// MONROPE /////////////////////*/
+@font-face {
+    font-family: 'MEL';
+    src: url(../fonts/Manrope/Manrope-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'ML';
+    src: url(../fonts/Manrope/Manrope-Light.ttf);
+}
+@font-face {
+    font-family: 'MR';
+    src: url(../fonts/Manrope/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: 'MM';
+    src: url(../fonts/Manrope/Manrope-Medium.ttf);
+}
+@font-face {
+    font-family: 'MSB';
+    src: url(../fonts/Manrope/Manrope-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'MB';
+    src: url(../fonts/Manrope/Manrope-Bold.ttf);
+}
+/* ///////////////////// IBM /////////////////////*/
+@font-face {
+    font-family: 'IR';
+    src: url(../fonts/Ibm/IBMPlexSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'IB';
+    src: url(../fonts/Ibm/IBMPlexSans-Bold.ttf);
+}
+/* ///////////////////// BOOK /////////////////////*/
+@font-face {
+    font-family: 'BB';
+    src: url(../fonts/bookantiqua_bold.ttf);
+}
