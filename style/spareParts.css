@@ -28,7 +28,7 @@ a{
     display: flex;
     gap: 20px;
 }
-.main__sort{
+.sort__pc{
     max-width: 289px;
     width: 100%;
     border-radius: 8px;
@@ -41,6 +41,9 @@ a{
 }
 .sort{
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .sort__price{
     display: flex;
@@ -132,6 +135,7 @@ a{
     margin-top: 10px;
 }
 .card__btn{
+    border: 1px solid black;
     font-size: 14px;
     line-height: 24px; 
     text-transform: uppercase;
@@ -145,8 +149,6 @@ a{
     text-align: center;
     margin: 30px 0 10px 0;
 }
-
-
 .main__container-mobile{
     display: none;
 }
@@ -211,52 +213,133 @@ a{
     margin: 50px auto !important;
 
 }
+/* ////////// ACCORDION ////////// */
+.accordion-button::after{
+    display: none !important;
+}
+.accordion-button{
+    text-align: center !important;
+    color: var(--wh) !important;
+    background: rgba(92, 83, 0, 0.713) !important;
+    margin-left: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none !important;
+    margin-bottom: 20px;
+    border-radius: 8px !important;
+}
+.accordion__icon{
+    margin-right: 12px;
+}
+.accordion-body{
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    border-radius: 8px;
+}
+.accordion-item{
+    border: none !important;
+    background: #0C141B !important;
+    width: 432px !important;
+}
+.accordion__mobile{
+    display: none;
+}
 
 
 
+.dropdown-menu{
+    margin-top: 8px !important;
+    margin-left: -40px !important;
+    padding: 0 !important;
+    text-align: center;
+    width: 190px;
+}
+.navbar__link:hover{
+    color: var(--yellow) !important;
+}
+.btn-secondary:hover{
+    background: rgba(255, 255, 255, 0.067) !important;
+}
+.navbar__link{
+    font-size: 15px !important;
+    line-height: 24px !important;
+    color: var(--wh) !important;
+    font-family: var(--MR) !important;
+    background: none !important;
+    border: none !important;
+    opacity: 0.6;
+    text-align: center !important;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 480px) {
+/* ///////////////// NEDIA-QUERIES ///////////////// */
+@media (max-width: 700px){
     .main__container{
-        display: none;
+        flex-direction: column;
+        align-items: center;
     }
+}
+@media (max-width: 480px) {
     .main__container-mobile{
         display: block;
+    }
+    .content__cards{
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        flex-wrap: wrap !important;
+    }
+    .accordion-item{
+        width: 332px !important;
+    }
+}
+@media (max-width: 350px) {
+    .accordion-item{
+        width: 232px !important;
+    }
+    .divider{
+        width: 200px;
+    }
+    .card__btn{
+        padding: 10px 12px;
+        font-style: 8px;
+        line-height: 8px;
+    }
+    .navbar__link{
+        font-size: 8px !important;
+        line-height: 16px !important;
+    }
+    .navbar__links{
+        margin: 0 !important;
+        gap: 3px !important;
+    }
+    .navbar__container{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between;
     }
 }
 @media (max-width: 768px) {
     .main__container{
         justify-content: center !important;
+        flex-wrap: wrap !important;
+    }
+    .accordion__mobile{
+        display: block;
+        z-index: 999;
+    }
+    .sort__pc{
+        display: none;
+    }
+    .accordion-body{
+        text-align: left !important;
+    }
+    .sort__mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: start !important;
     }
 }
 @media (max-width: 991px) {

@@ -82,7 +82,6 @@ p{
     padding: 0;
     text-align: center;
     width: 190px;
-
 }
 .dropdown-menu::before{
     border-bottom: 10px solid #12191F;
@@ -108,6 +107,9 @@ p{
 }
 .dropdown-menu > li:nth-of-type(even){
     background: var(--text);
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 .form-outline{
     display: flex;
@@ -136,11 +138,6 @@ p{
     height: 24px;
     display: none;
 }
-
-
-
-
-
 /* //////////////---NAVBAR---////////////// */
 .header__top{
     height: 515px;
@@ -418,6 +415,7 @@ input:checked + .slide-container .carousel-controls label {
 .card__bottom{
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .card__location-icon{
     color: var(--yellow);
@@ -584,23 +582,42 @@ input:checked + .slide-container .carousel-controls label {
 .footer__main-title:hover{
     color: var(--yellow);
 }
-
 /* //////////////---FOOTER---////////////// */
 
 /* //////////////////// FOOTER - END  //////////////////// */
 @media (max-width: 480px) {
-
-    .header__navbar-mobile{
-        display: none;
-    }
     .header__title{
         max-width: 420px !important;
         width: 100%;
         margin: 0 !important;
-        font-size: 24px;
-        line-height: normal;
-        font-family: var(--IR);
+        font-size: 24px !important;
+        line-height: normal !important;
+        font-family: var(--IR) !important;
         margin-bottom: 20px !important;
+    }
+    .navbar__link{
+        font-size: 12px !important;
+        line-height: 24px !important;
+    }
+    .navbar__links{
+        display: flex !important;
+        align-items: center !important;
+        gap: 5px !important;
+        margin: 0 !important;
+    }
+    .btn-secondary{
+        padding: 0 6px;
+    }
+    .dropdown-menu{
+        width: 120px;
+        margin: 0px 0 0 0  !important;
+        padding: 0 !important;
+        margin-left: -40px !important;
+        margin-top: 8px !important;
+    }
+    .navbar__user-icon{
+        width: 16px;
+        height: 16px;
     }
     .header__top-img{
         margin-left: 50% !important;
@@ -809,6 +826,29 @@ input:checked + .slide-container .carousel-controls label {
     }
     .top__container{
         margin: 0 12px !important;
+    }
+    .navbar__links{
+        display: flex !important;
+        justify-content: space-between !important;
+        margin-left: 20px !important;
+    }
+}
+@media (max-width: 325px) {
+    .navbar__link{
+        font-size: 8px !important;
+        line-height: 16px !important;
+    }
+    .navbar__links{
+        margin: 0 !important;
+        gap: 3px !important;
+    }
+}
+@media (max-width: 300px) {
+    .top__container{
+        margin: 0 !important;
+    }
+    .footer__logo-text{
+        width: 200px !important;
     }
 }
 @media (max-width: 770px) {
